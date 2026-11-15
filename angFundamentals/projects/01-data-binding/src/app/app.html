@@ -1,0 +1,27 @@
+<!-- <h1>01_Data_Binding</h1>
+<div>
+  <h4>String Interpolation</h4>
+  {{ title() }}
+</div>
+<br />
+<div>
+  <h4>Property Binding</h4>
+  <input #valueInput type="text" [value]="propBinding" />
+</div>
+<div>
+  <h4>Event Binding</h4>
+  <button (click)="handleClick(valueInput.value)">click of eventBinding</button>
+  <p>{{ eventMessage() }}</p>
+</div> -->
+
+<!-- ==================================== -->
+<div>
+  <h3>Welcome to {{ bindType1 }}</h3>
+  <p [title]="bindType2.name">bindType_2 is : {{ bindType2.name }}!</p>
+  <button (click)="bindType3()">bindType_3 : Event Binding got clicked {{ count }} times</button>
+</div>
+<br>
+<div>
+  <input type="text" [(ngModel)]="bindType4" />
+  <p>bindType_4 value is : {{ bindType4 }}!</p>
+</div>
